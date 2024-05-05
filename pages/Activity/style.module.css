@@ -1,0 +1,245 @@
+.page-container{
+    background-color: #F1F1F1;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    color: #505050;
+    height: 100;
+}
+
+.avatar{
+    width: 132px;
+    margin-bottom: 16px;
+}
+
+.account{
+    color: #5095EC;
+}
+
+.comments{
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    background-color: #FFFFFF;
+    padding: 56px 32px 32px 32px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-title{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.closed{
+    flex-direction: row;
+    padding: 18px 32px;
+}
+
+.time-created{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.open{
+    padding-left: 8px;
+}
+
+.time{
+    width: 18px;
+}
+
+.commet-image{
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.comment-text{
+    padding-left: 8px;
+    border-left: 2px solid #D3D8DE;
+}
+
+.person-commented{
+    color: #8F8F8F;
+}
+
+.comment-actions{
+    display: flex;
+    gap: 32px;
+}
+
+.views,
+.comments-amount {
+    display: flex;
+    gap: 8px;
+}
+
+.profile{
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #505050;
+}
+
+.profession{
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #8F8F8F;
+    
+}
+
+.socials {
+    gap: 8px;
+}
+
+.person{
+    background-color: #FFFFFF;
+    padding: 32px 66px;
+}
+
+.person,
+.thoughts,
+.navigation,
+.comment {
+    box-shadow: 0px 0px 2px 0px #0000001A;
+}
+
+.thoughts, 
+.navigation{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navigation-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px 16px 8px;
+    border-bottom: 1px solid #D3D8DE;
+}
+
+.navigation-item{
+    display: flex;
+    gap: 16px;
+}
+
+.title{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D3D8DE;
+}
+
+.balance{
+    color: #8F8F8F;
+    font-size: 12px;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+.column{
+    flex-direction: column;
+    width: 100%;
+}
+
+.column li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 16px; 
+}
+
+.connections,
+.events {
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    background-color: #E33939;
+}
+
+.green{
+    background-color: #47B091;
+}
+
+.thoughts-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 16px 16px 16px;
+}
+
+.thoughts-text{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    resize: none;
+    height: 88px;
+}
+
+.thoughts-text:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.thoughts-button{
+    background-color: #5095EC;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    height: 32px;
+    font-weight: 500;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; 
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+  }
