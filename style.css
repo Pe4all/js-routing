@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root{
     --main-color: #505050;
+    --backgound-color: #F1F1F1;
+}
+
+*{
+    font-family: 'Roboto', 'serif';
+}
+
+body{
+    background-color: var(--backgound-color);
 }
 
 .active {
@@ -7,8 +18,8 @@
     color: var(--main-color);
 }
 
-.content{
-    color: var(--main-color);
+header{
+    background-color: var(--backgound-color);
 }
 
 .nav-link{
@@ -71,6 +82,7 @@
     z-index: 1;
 }
 
+
 .main-pages {
     align-items: center;
     display: flex;
@@ -84,4 +96,30 @@
 
 .nav-item{
     display: flex;
+}
+
+@media (max-width: 1024px) {
+    .user-nav {
+        background-image: url(./images/Person\ Outline.svg) ;
+        background-size: contain;
+background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-nav li{
+        display: none;
+    }
+
+    .main-socials ul{
+        display: none;
+    }
+
+    .main-socials{
+        background-image: url(./images/Settings\ Outline.svg) ;
+        background-size: contain;
+background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
 }

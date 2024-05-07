@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebBee internship</title>
+    <link rel="icon" type="image/jpg" href="./images/images.jpg">
+    <title>JS Vanilla Routing</title>
     <link
       href="./bootstrap/bootstrap.min.css"
       rel="stylesheet"
@@ -13,12 +14,12 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./pages/Activity/style.module.css" />
     <link rel="stylesheet" href="./pages/Map/style.module.css" />
+    <link rel="stylesheet" href="./pages/Timer/style.module.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=41780ac3-bcbf-415c-8f35-0d557beda84b&lang=ru_RU"></script>
   </head>
   <body>
     <div id="root">
       <header>
-        <div class="content">
           <div class="user wrapper">
             <div class="user-page">
               <img src="./images/Back Outline.svg" alt="back" /><span
@@ -101,13 +102,10 @@
               </ul>
             </div>
           </nav>
-        </div>
       </header>
 
       <div id="main-page"></div>
-      <!-- <div id="map" style="height: 400px;"></div> -->
     </div>
-    <script defer src="router.js"></script>
-    <!-- <script defer src="map.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
