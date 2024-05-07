@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --main-color: #505050;
+    --backgound-color: #F1F1F1;
+}
+
+*{
+    font-family: 'Roboto', 'serif';
+}
+
+body{
+    background-color: var(--backgound-color);
+}
+
+.active {
+    background-color: #F1F1F1;
+    color: var(--main-color);
+}
+
+header{
+    background-color: var(--backgound-color);
+}
+
+.nav-link{
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0 32px;
+}
+
+.user {
+    height: 64px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 1px 0px #0000001A;
+    position: relative;
+    z-index: 2;
+}
+
+.user-nav li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-nav li img{
+    width: 24px;
+}
+
+.user-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    box-shadow: 0px 1px 1px 0px #0000001A;
+    position: relative;
+    z-index: 1;
+}
+
+
+.main-pages {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.user-nav {
+    gap: 32px;
+}
+
+.nav-item{
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .user-nav {
+        background-image: url(./images/Person\ Outline.svg) ;
+        background-size: contain;
+background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-nav li{
+        display: none;
+    }
+
+    .main-socials ul{
+        display: none;
+    }
+
+    .main-socials{
+        background-image: url(./images/Settings\ Outline.svg) ;
+        background-size: contain;
+background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+}
