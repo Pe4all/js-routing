@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./pages/Activity/style.module.css" />
     <link rel="stylesheet" href="./pages/Map/style.module.css" />
     <link rel="stylesheet" href="./pages/Timer/style.module.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=41780ac3-bcbf-415c-8f35-0d557beda84b&lang=ru_RU"></script>
   </head>
   <body>
@@ -22,7 +23,7 @@
       <header>
           <div class="user wrapper">
             <div class="user-page">
-              <img src="./images/Back Outline.svg" alt="back" /><span
+              <i class="bi bi-arrow-return-left icon-big"></i><span
                 class="bold"
                 >User pages</span
               >
@@ -30,22 +31,13 @@
             <div class="user-info">
               <ul class="nav user-nav">
                 <li>
-                  <img
-                    src="./images/Chart Outline.svg"
-                    alt="Statistics"
-                  />Statistics
+                  <i class="bi bi-bar-chart-line header-icon"></i>Statistics
                 </li>
                 <li>
-                  <img
-                    src="./images/Calculate Outline.svg"
-                    alt="Invoices"
-                  />Invoices
+                  <i class="bi bi-credit-card header-icon"></i>Invoices
                 </li>
                 <li>
-                  <img
-                    src="./images/Receipt Outline.svg"
-                    alt="Schedule"
-                  />Schedule
+                  <i class="bi bi-receipt-cutoff header-icon"></i>Schedule
                 </li>
               </ul>
             </div>
@@ -60,17 +52,17 @@
                     href="/index.html"
                     onclick="route()"
                   >
-                    <img src="./images/Union.svg" alt="Activity" />Activity
+                  <i class="bi bi-list "></i>Activity
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/map" onclick="route()">
-                    <img src="./images/Union-1.svg" alt="Map" />Map
+                    <i class="bi bi-geo-alt "></i>Map
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/timer" onclick="route()">
-                    <img src="./images/Union-2.svg" alt="Time" />Time
+                    <i class="bi bi-clock"></i>Time
                   </a>
                 </li>
               </ul>
@@ -79,25 +71,22 @@
               <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link"
-                    ><img src="./images/Docs Outline.svg" alt="" />Notes</a
+                    ><i class="bi bi-pencil-square"></i>Notes</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link"
-                    ><img src="./images/Union-3.svg" alt="" />Friends</a
+                    ><i class="bi bi-people"></i>Friends</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link"
-                    ><img src="./images/Jpg Outline.svg" alt="" />Photos</a
+                    ><i class="bi bi-images"></i>Photos</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link"
-                    ><img src="./images/Union-5.svg" alt="" /><img
-                      src="./images/Union-6.svg"
-                      alt=""
-                  /></a>
+                    ><i class="bi bi-gear"></i><i class="bi bi-chevron-down"></i></a>
                 </li>
               </ul>
             </div>
@@ -106,6 +95,6 @@
 
       <div id="main-page"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

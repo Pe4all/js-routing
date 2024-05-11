@@ -21,4 +21,5 @@
 
 .timer-actions{
     gap: 8px;
+    display: flex;
 }

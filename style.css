@@ -98,9 +98,26 @@ header{
     display: flex;
 }
 
+.header-icon{
+    color: #5095EC;
+    font-size: 24px;
+}
+
+.icon-big {
+    font-size: 24px;
+
+}
+
+.icon{
+    font-size: 20px;
+    height: 20px;
+    display: flex;
+    color: black;
+}
+
 @media (max-width: 1024px) {
     .user-nav {
-        background-image: url(./images/Person\ Outline.svg) ;
+        background-image: url(./images/more.svg) ;
         background-size: contain;
 background-repeat: no-repeat;
         width: 40px;
@@ -116,7 +133,7 @@ background-repeat: no-repeat;
     }
 
     .main-socials{
-        background-image: url(./images/Settings\ Outline.svg) ;
+        background-image: url(./images/more.svg) ;
         background-size: contain;
 background-repeat: no-repeat;
         width: 30px;
